@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, FlatList } from "react-native";
-import { Schema } from "../../amplify/data/resource";
 import { styles } from "./styles";
+import { Schema } from "../../../amplify/data/resource";
 
 type SectionProps<T> = {
   title: string;

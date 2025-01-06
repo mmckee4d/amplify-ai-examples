@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
-import { Schema } from "../../amplify/data/resource";
 import { UserInformation } from "./types";
+import { Schema } from "../../../amplify/data/resource";
 
 type ProfileHeaderProps = {
   user: UserInformation | undefined;

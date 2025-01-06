@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { styles } from "./styles";
-import { Schema } from "../../amplify/data/resource";
+import { Schema } from "../../../amplify/data/resource";
 
 type ActivityProps = {
   activity: Schema["Activities"]["type"];

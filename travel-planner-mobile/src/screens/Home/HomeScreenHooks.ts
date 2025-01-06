@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Alert } from "react-native";
 import { generateClient } from "aws-amplify/api";
-import { Schema } from "../../amplify/data/resource";
+import { Schema } from "../../../amplify/data/resource";
 
 const client = generateClient<Schema>();
 

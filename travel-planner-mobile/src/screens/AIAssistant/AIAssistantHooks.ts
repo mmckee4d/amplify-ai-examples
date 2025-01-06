@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { getCurrentUser } from "aws-amplify/auth";
 import { generateClient } from "aws-amplify/api";
 import { createAIHooks } from "@aws-amplify/ui-react-ai";
-import { Schema } from "../../amplify/data/resource";
 import { parseDateString, isValidJSON } from "./utils";
+import { Schema } from "../../../amplify/data/resource";
 
 const client = generateClient<Schema>();
 const { useAIConversation } = createAIHooks(client);
@@ -151,7 +151,7 @@ export const useAIAssistant = () => {
     return data!;
   };
 
-  const createActictivities = async (
+  const createActivities = async (
     activities: any[],
     destinationId: string,
     tripId: string

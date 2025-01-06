@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { generateClient } from "aws-amplify/api";
-import { Schema } from "../../amplify/data/resource";
 import { fetchUserAttributes, getCurrentUser } from "aws-amplify/auth";
 import { getUrl, uploadData } from "aws-amplify/storage";
 import * as ImagePicker from "expo-image-picker";
 import Constants from "expo-constants";
 import { UserInformation } from "./types";
 import { fetchImageFromUri } from "./utils";
+import { Schema } from "../../../amplify/data/resource";
 
 const client = generateClient<Schema>();
 
