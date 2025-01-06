@@ -4,16 +4,24 @@
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@aws-amplify/react-native": "^1.1.6",
+    "@aws-amplify/ui-react-native": "^2.3.1",
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@react-native-community/netinfo": "^11.4.1",
+    "aws-amplify": "^6.12.0",
     "expo": "~52.0.23",
     "expo-status-bar": "~2.0.0",
     "react": "18.3.1",
-    "react-native": "0.76.5"
+    "react-native": "0.76.5",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-safe-area-context": "^5.0.0",
+    "react-native-url-polyfill": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
