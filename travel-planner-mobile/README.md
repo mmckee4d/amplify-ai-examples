@@ -1,5 +1,7 @@
 # Travel Planner App
 
+[Travel Planner App Demo](https://github.com/aws-samples/amplify-ai-examples/tree/travel-planner-app/travel-planner-mobile/assets/amplifyai.mp4)
+
 A comprehensive travel planning application built with Expo and TypeScript, featuring AI-assisted trip planning, destination discovery, and activity management.
 
 ## 🚀 Technology Stack
