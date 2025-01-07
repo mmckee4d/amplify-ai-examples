@@ -4,8 +4,9 @@ import { preSignUp } from "./pre-sign-up/resource";
 export const auth = defineAuth({
   loginWith: {
     email: {
-      verificationEmailSubject: "Welcome to the re:invent!",
-      verificationEmailBody: (code) => `Your verification code is ${code()}`,
+      verificationEmailSubject: "Welcome to the your sample app!",
+      verificationEmailBody: (code) =>
+        `Your verification code is for Amplify AI Travel Planner: ${code()}`,
       verificationEmailStyle: "CODE",
     },
   },

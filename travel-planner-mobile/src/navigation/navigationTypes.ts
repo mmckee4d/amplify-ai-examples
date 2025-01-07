@@ -1,7 +1,12 @@
-import { RouteProp } from "@react-navigation/native";
+import { CompositeNavigationProp, RouteProp } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
-import { StackNavigationProp as RNStackNavigationProp } from "@react-navigation/stack";
+import {
+  StackNavigationProp as RNStackNavigationProp,
+  StackNavigationProp,
+} from "@react-navigation/stack";
+
+import { NavigatorScreenParams } from "@react-navigation/native";
 
 export type TabNavigatorParamList = {
   Home: undefined;
@@ -10,11 +15,16 @@ export type TabNavigatorParamList = {
 };
 
 export type RootStackParamList = {
-  TabNavigator: undefined;
+  TabNavigator: NavigatorScreenParams<TabNavigatorParamList>;
   TripDetail: { tripId: string };
   ActivityDetail: { activityId: string };
   DestinationDetail: { destinationId: string };
 };
+
+export type HomeScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabNavigatorParamList, "Home">,
+  StackNavigationProp<RootStackParamList>
+>;
 
 export type TabNavigationProp<T extends keyof TabNavigatorParamList> =
   BottomTabNavigationProp<TabNavigatorParamList, T>;

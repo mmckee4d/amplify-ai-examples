@@ -1,14 +1,9 @@
 import React from "react";
 import { View, Text, FlatList, ActivityIndicator } from "react-native";
 import { styles } from "./styles";
+import { ConversationMessage } from "@aws-amplify/ui-react-ai";
 
-type Message = {
-  id: string;
-  role: string;
-  content: { text: string }[];
-};
-
-export const MessageList: React.FC<{ messages: Message[] }> = ({
+export const MessageList: React.FC<{ messages: ConversationMessage[] }> = ({
   messages,
 }) => {
   if (messages.length === 0) {

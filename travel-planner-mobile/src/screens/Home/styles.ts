@@ -213,4 +213,7 @@ export const styles = StyleSheet.create({
     textAlign: "left",
     marginVertical: 16,
   },
+  loader: {
+    marginTop: 20,
+  },
 });

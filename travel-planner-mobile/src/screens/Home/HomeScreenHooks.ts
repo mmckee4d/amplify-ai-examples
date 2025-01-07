@@ -35,7 +35,7 @@ export const useHomeScreenData = () => {
           return;
         }
 
-        setTrips(tripsResposponse.data);
+        setTrips(tripsResponse.data);
         setActivities(activitiesResponse.data);
         setDestinations(destinationsResponse.data);
       } catch (error) {
