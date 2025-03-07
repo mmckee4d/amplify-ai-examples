@@ -81,8 +81,6 @@ export const useProfile = () => {
   ) => {
     try {
       if (pickerResult.canceled) {
-        alert("Upload cancelled");
-        return;
       } else {
         setUser((prev) => ({
           ...prev!,
@@ -92,7 +90,6 @@ export const useProfile = () => {
       }
     } catch (e) {
       console.log(e);
-      alert("Upload failed");
     }
   };
 
